@@ -5,278 +5,261 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Madrid Travel Guide</title>
 
-<p><a herf="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;500;600&display=swap">
-
+https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;500;600&display=swap
 
 <style>
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
 }
 
 body{
-    font-family:'Inter',sans-serif;
-    background:#f8f5f1;
-    color:#333;
-    line-height:1.6;
+  font-family:'Inter',sans-serif;
+  background:#f8f5f1;
+  color:#333;
+  line-height:1.7;
 }
 
 .hero{
-    height:100vh;
-    background:
-    linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),
-    url('https://images.unsplash.com/photo-1539037116277-4db20889f2d4?auto=format&fit=crop&w=1500&q=80');
-    background-size:cover;
-    background-position:center;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
-    color:white;
+  height:100vh;
+  background:
+  linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),
+  url('https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&fit=crop&w=1800&q=80');
+  background-size:cover;
+  background-position:center;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  color:white;
+  padding:20px;
 }
 
-.hero-content h1{
-    font-family:'Playfair Display',serif;
-    font-size:4rem;
-    margin-bottom:15px;
+.hero h1{
+  font-family:'Playfair Display',serif;
+  font-size:4rem;
+  margin-bottom:15px;
 }
 
-.hero-content p{
-    font-size:1.3rem;
-    max-width:700px;
-    margin:auto;
+.hero p{
+  max-width:700px;
+  margin:auto;
+  font-size:1.2rem;
 }
 
 .btn{
-    display:inline-block;
-    margin-top:25px;
-    background:#C0392B;
-    color:white;
-    text-decoration:none;
-    padding:14px 32px;
-    border-radius:40px;
-    transition:.3s;
-}
-
-.btn:hover{
-    background:#922B21;
+  display:inline-block;
+  margin-top:25px;
+  padding:14px 34px;
+  background:#d62828;
+  color:white;
+  text-decoration:none;
+  border-radius:40px;
 }
 
 section{
-    padding:80px 10%;
+  padding:80px 10%;
 }
 
 .section-title{
-    text-align:center;
-    font-family:'Playfair Display',serif;
-    font-size:2.5rem;
-    margin-bottom:50px;
-    color:#1d3557;
+  text-align:center;
+  font-family:'Playfair Display',serif;
+  font-size:3rem;
+  margin-bottom:50px;
+  color:#1d3557;
 }
 
 .cards{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-    gap:25px;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:25px;
 }
 
 .card{
-    background:white;
-    border-radius:18px;
-    overflow:hidden;
-    box-shadow:0 8px 24px rgba(0,0,0,.08);
-    transition:.3s;
-}
-
-.card:hover{
-    transform:translateY(-6px);
+  background:white;
+  border-radius:20px;
+  overflow:hidden;
+  box-shadow:0 10px 25px rgba(0,0,0,.1);
 }
 
 .card img{
-    width:100%;
-    height:220px;
-    object-fit:cover;
+  width:100%;
+  height:220px;
+  object-fit:cover;
 }
 
 .card-content{
-    padding:25px;
+  padding:25px;
 }
 
 .card-content h3{
-    margin-bottom:10px;
-    color:#1d3557;
+  color:#1d3557;
+  margin-bottom:10px;
 }
 
 .itinerary{
-    background:#1d3557;
-    color:white;
-}
-
-.timeline{
-    max-width:900px;
-    margin:auto;
+  background:#1d3557;
+  color:white;
 }
 
 .day{
-    background:rgba(255,255,255,.08);
-    margin-bottom:20px;
-    padding:25px;
-    border-radius:15px;
+  background:rgba(255,255,255,.08);
+  padding:20px;
+  margin-bottom:15px;
+  border-radius:12px;
 }
 
 .day h3{
-    margin-bottom:10px;
-    color:#ffd166;
+  color:#ffd166;
 }
 
 .food-grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:25px;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:25px;
 }
 
 .food{
-    background:white;
-    padding:25px;
-    border-radius:15px;
-    text-align:center;
-    box-shadow:0 4px 15px rgba(0,0,0,.08);
+  background:white;
+  padding:25px;
+  border-radius:15px;
+  box-shadow:0 6px 15px rgba(0,0,0,.08);
 }
 
 footer{
-    background:#0b2545;
-    color:white;
-    text-align:center;
-    padding:40px 20px;
-}
-
-footer h2{
-    font-family:'Playfair Display',serif;
-    margin-bottom:10px;
+  background:#0b2545;
+  color:white;
+  text-align:center;
+  padding:50px 20px;
 }
 </style>
 </head>
+
 <body>
 
 <header class="hero">
-    <div class="hero-content">
-        <h1>Madrid, España</h1>
-        <p>
-            Discover the heart of Spain with stunning architecture,
-            world-famous tapas, historic plazas, vibrant neighborhoods,
-            and unforgettable culture.
-        </p>
-        #discoverExplore Madrid</a>
-    </div>
+  <div>
+    <h1>Madrid, España</h1>
+    <p>
+      Marc's personal Madrid adventure.
+      Architecture, tapas, culture, history and unforgettable views.
+    </p>
+    #discoverExplore Madrid</a>
+  </div>
 </header>
 
 <section id="discover">
-    <h2 class="section-title">Top Attractions</h2>
 
-    <div class="cards">
+  <h2 class="section-title">Top Attractions</h2>
 
-        <div class="card">
-            https://images.unsplash.com/photo-1562887276-54b18b4fc596?auto=format&fit=crop&w=1200&q=80
-            <div class="card-content">
-                <h3>Royal Palace</h3>
-                <p>One of Europe's grandest royal residences with magnificent halls, gardens, and views.</p>
-            </div>
-        </div>
+  <div class="cards">
 
-        <div class="card">
-            https://images.unsplash.com/photo-1578911373434-0cb395d2cbfb?auto=format&fit=crop&w=1200&q=80
-            <div class="card-content">
-                <h3>Plaza Mayor</h3>
-                <p>The historic center of Madrid surrounded by elegant architecture and cafés.</p>
-            </div>
-        </div>
-
-        <div class="card">
-            https://images.unsplash.com/photo-1518639192441-8fce0a366e2e?auto=format&fit=crop&w=1200&q=80
-            <div class="card-content">
-                <h3>Gran Vía</h3>
-                <p>Madrid's iconic boulevard featuring Art Deco landmarks, shopping, and vibrant nightlife.</p>
-            </div>
-        </div>
-
+    <div class="card">
+      https://images.unsplash.com/photo-1562887276-54b18b4fc596?auto=format&fit=crop&w=1200&q=80
+      <div class="card-content">
+        <h3>Royal Palace</h3>
+        <p>One of Europe's grandest royal residences featuring magnificent halls and gardens.</p>
+      </div>
     </div>
+
+    <div class="card">
+      https://images.unsplash.com/photo-1578911373434-0cb395d2cbfb?auto=format&fit=crop&w=1200&q=80
+      <div class="card-content">
+        <h3>Plaza Mayor</h3>
+        <p>Madrid's historic square surrounded by elegant arcades, cafés and centuries of history.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      https://images.unsplash.com/photo-1518639192441-8fce0a366e2e?auto=format&fit=crop&w=1200&q=80
+      <div class="card-content">
+        <h3>Gran Vía</h3>
+        <p>The city's iconic boulevard known for architecture, shopping and nightlife.</p>
+      </div>
+    </div>
+
+  </div>
+
 </section>
 
 <section class="itinerary">
-    <h2 class="section-title" style="color:white;">Suggested 7-Day Journey</h2>
 
-    <div class="timeline">
+  <h2 class="section-title" style="color:white;">
+    7-Day Madrid Itinerary
+  </h2>
 
-        <div class="day">
-            <h3>Day 1 • La Latina</h3>
-            <p>Arrive, explore charming streets, markets, and enjoy a tapas crawl along Cava Baja.</p>
-        </div>
+  <div class="day">
+    <h3>Day 1 • Arrival & La Latina</h3>
+    <p>Explore Cava Baja and enjoy your first Madrid tapas crawl.</p>
+  </div>
 
-        <div class="day">
-            <h3>Day 2 • Royal Palace</h3>
-            <p>Visit Palacio Real, Almudena Cathedral, and panoramic viewpoints.</p>
-        </div>
+  <div class="day">
+    <h3>Day 2 • Royal Palace</h3>
+    <p>Visit Palacio Real, Almudena Cathedral and Plaza de Oriente.</p>
+  </div>
 
-        <div class="day">
-            <h3>Day 3 • Historic Madrid</h3>
-            <p>Puerta del Sol, Plaza Mayor, Mercado de San Miguel, and Lavapiés.</p>
-        </div>
+  <div class="day">
+    <h3>Day 3 • Historic Madrid</h3>
+    <p>Puerta del Sol, Plaza Mayor and Lavapiés.</p>
+  </div>
 
-        <div class="day">
-            <h3>Day 4 • Architecture Tour</h3>
-            <p>Gran Vía, Templo de Debod, Bernabéu Stadium, and spectacular rooftop views.</p>
-        </div>
+  <div class="day">
+    <h3>Day 4 • Architecture Day</h3>
+    <p>Gran Vía, Cibeles, Templo de Debod and Bernabéu Stadium.</p>
+  </div>
 
-        <div class="day">
-            <h3>Day 5 • Cathedrals & Parks</h3>
-            <p>San Francisco el Grande, Almudena Cathedral, Retiro Park, and Atocha.</p>
-        </div>
+  <div class="day">
+    <h3>Day 5 • Cathedrals & Parks</h3>
+    <p>San Francisco el Grande, Almudena and Retiro Park.</p>
+  </div>
 
-        <div class="day">
-            <h3>Day 6 • Trendy Neighbourhoods</h3>
-            <p>Explore Malasaña, Chueca, Salamanca, shopping, cafés, and nightlife.</p>
-        </div>
+  <div class="day">
+    <h3>Day 6 • Malasaña & Chueca</h3>
+    <p>Shopping, cafés and Madrid nightlife.</p>
+  </div>
 
-        <div class="day">
-            <h3>Day 7 • Farewell Madrid</h3>
-            <p>Final stroll through La Latina and departure from Atocha Station.</p>
-        </div>
+  <div class="day">
+    <h3>Day 7 • Departure</h3>
+    <p>One last coffee in La Latina before heading to Atocha.</p>
+  </div>
 
-    </div>
 </section>
 
 <section>
-    <h2 class="section-title">Where To Eat</h2>
 
-    <div class="food-grid">
+  <h2 class="section-title">Recommended Restaurants</h2>
 
-        <div class="food">
-            <h3>Casa Lucio</h3>
-            <p>Famous for huevos rotos and classic Madrid cuisine.</p>
-        </div>
+  <div class="food-grid">
 
-        <div class="food">
-            <h3>Casa Lucas</h3>
-            <p>Top-rated wine bar with exceptional tapas.</p>
-        </div>
-
-        <div class="food">
-            <h3>La Perejila</h3>
-            <p>Traditional croquetas and authentic local atmosphere.</p>
-        </div>
-
-        <div class="food">
-            <h3>Malacatín</h3>
-            <p>Legendary cocido madrileño in a historic tavern.</p>
-        </div>
-
+    <div class="food">
+      <h3>Casa Lucio</h3>
+      <p>Famous for huevos rotos and traditional Madrid cuisine.</p>
     </div>
+
+    <div class="food">
+      <h3>Casa Lucas</h3>
+      <p>A fantastic wine bar and tapas experience.</p>
+    </div>
+
+    <div class="food">
+      <h3>La Perejila</h3>
+      <p>Classic Madrid tapas and homemade croquetas.</p>
+    </div>
+
+    <div class="food">
+      <h3>Malacatín</h3>
+      <p>The place to try authentic cocido madrileño.</p>
+    </div>
+
+  </div>
+
 </section>
 
 <footer>
-    <h2>¡Bienvenido a Madrid!</h2>
-    <p>Architecture • Culture • Food • History • Adventure</p>
+  <h2>¡Bienvenido a Madrid!</h2>
+  <p>September 13–19, 2026</p>
+  <p>La Latina • Architecture • Tapas • Culture</p>
 </footer>
 
 </body>
